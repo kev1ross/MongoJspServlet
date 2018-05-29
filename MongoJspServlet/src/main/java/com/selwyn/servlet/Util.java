@@ -16,7 +16,8 @@ public class Util {
 	// Method to make a connection to the mongodb server listening on a default port
 	private static MongoClient getConnection() {
 		int port_no = 27017;
-		String url = "KEV-ACER";
+		// String url = "KEV-ACER";
+		String url = "localhost";
 
 		MongoClient mongoClntObj = new MongoClient(url, port_no);
 		return mongoClntObj;
@@ -25,7 +26,7 @@ public class Util {
 	// Method to search a user in the mongodb
 	public static boolean searchUserInDb(String loginId, String loginPwd) {
 		boolean user_found = false;
-		String db_name = "emp_records", db_collection_name = "emp";
+		String db_name = "data1", db_collection_name = "emp";
 
 		// Get the mongodb connection
 		MongoDatabase db = getConnection().getDatabase(db_name);
@@ -45,13 +46,15 @@ public class Util {
 
 		FindIterable<Document> cursor = col.find(whereQuery);
 		System.out.println("a1");
-		
+
 		for (Document doc : cursor) {
+			System.out.println("a2");
 			System.out.println("Found?= " + doc);
 			user_found = true;
 		}
-		
+		System.out.println("a3");
+
 		return user_found;
-		
+
 	}
 }
