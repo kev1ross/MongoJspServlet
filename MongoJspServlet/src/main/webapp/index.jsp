@@ -46,6 +46,14 @@
 						placeholder="What day is it? ...e.g. Mon, Tue, Wed" name="login_day" maxlength="3">
 				</div>
 
+				<!----- ANOTHER RANDOM FIELD ------>
+				<div class="input-group">
+					<span class="input-group-addon"><i
+						class="glyphicon glyphicon-tree-deciduous"></i></span> <input type="text"
+						class="form-control" id="login_born"
+						placeholder="Where where you born? ..." name="login_born" maxlength="20">
+				</div>
+
 				<!----- SUBMIT BUTTON ------>
 				<div></div>
 				<button id="submit_btn" type="submit" class="btn btn-primary">Confirm

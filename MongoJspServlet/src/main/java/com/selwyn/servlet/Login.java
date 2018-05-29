@@ -23,15 +23,18 @@ public class Login extends HttpServlet {
 
 	public void handleRequest(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
-		System.out.println("ver8");
+		System.out.println("ver9");
 
 		System.out.println("r1" + req.getContentType() + ".." + req.getQueryString());
 
 		// Reading post parameters from the request
-		String param1 = req.getParameter("login_id"), param2 = req.getParameter("login_pwd"),
-				param3 = req.getParameter("login_day");
+		String param1 = req.getParameter("login_id");
+		String param2 = req.getParameter("login_pwd");
+		String param3 = req.getParameter("login_day");
+		String param4 = req.getParameter("login_born");
 
 		System.out.println("day=" + param3);
+		System.out.println("born=" + param4);
 
 		// Checking for null and empty values
 		if (param1 == null || param2 == null || "".equals(param1) || "".equals(param2)) {
