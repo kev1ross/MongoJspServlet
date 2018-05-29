@@ -23,7 +23,7 @@ public class Login extends HttpServlet {
 
 	public void handleRequest(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
-		System.out.println("ver9");
+		System.out.println("ver11");
 
 		System.out.println("r1" + req.getContentType() + ".." + req.getQueryString());
 
