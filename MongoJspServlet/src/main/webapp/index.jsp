@@ -28,7 +28,7 @@
 					<span class="input-group-addon"><i
 						class="glyphicon glyphicon-user"></i></span> <input type="text"
 						class="form-control" id="login_id"
-						placeholder="Enter login id ..." name="login_id" maxlength="6">
+						placeholder="Enter login id ..." name="login_id" maxlength="20">
 				</div>
 				<div></div>
 				<div class="input-group">
